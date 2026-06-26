@@ -245,19 +245,31 @@
                 </div>
             </div>
 
-            <!-- Gantikan bagian gambar QRIS dengan blok ini -->
-<div class="bca-payment-wrapper" style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff; max-width: 350px; margin: 0 auto;">
-    <h3 style="margin-top: 0; color: #0066AE; font-family: Arial, sans-serif;">Transfer Bank BCA</h3>
-    <p style="font-size: 14px; color: #555; margin-bottom: 15px;">Silakan lakukan pembayaran ke rekening berikut:</p>
+           <div class="glass-card rounded-2xl p-6 max-w-sm mx-auto text-center border border-white/5 relative overflow-hidden my-4" style="box-shadow: 0 0 30px rgba(16, 185, 129, 0.05);">
     
-    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
-        <p style="margin: 0; font-size: 14px; color: #777;">Nomor Rekening:</p>
-        <h2 id="no-rek-bca" style="margin: 5px 0; font-size: 24px; letter-spacing: 1px; color: #333;">2730425328</h2>
-        <p style="margin: 0; font-size: 16px; font-weight: bold; color: #555;">a.n Tri Afriansyah</p>
+    <div class="flex items-center justify-center gap-2 mb-4">
+        <i class="fas fa-university text-emerald-400 text-lg"></i>
+        <h3 class="text-white font-semibold text-base tracking-wide uppercase">Metode Transfer Bank</h3>
+    </div>
+    
+    <div class="mb-5">
+        <span class="text-2xl font-black italic tracking-wider text-gradient-emerald">BCA</span>
+        <p class="text-xs text-gray-400 mt-1">Silakan transfer tepat sesuai total nominal ke rekening berikut:</p>
+    </div>
+    
+    <div class="bg-black/40 border border-white/5 rounded-xl p-4 mb-5 backdrop-blur-sm">
+        <span class="text-xs text-gray-500 uppercase tracking-widest font-medium block mb-1">Nomor Rekening</span>
+        
+        <h2 id="no-rek-bca" class="text-2xl font-bold tracking-widest text-white select-all my-1 font-mono">2730425328</h2>
+        
+        <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent my-2"></div>
+        
+        <p class="text-sm font-medium text-emerald-400">a.n Tri Afriansyah</p>
     </div>
 
-    <button onclick="copyRekBCA()" style="background-color: #0066AE; color: #fff; border: none; padding: 10px 20px; font-size: 14px; border-radius: 5px; cursor: pointer; transition: background 0.3s; width: 100%; font-weight: bold;">
-        Salin Nomor Rekening
+    <button onclick="copyRekBCA()" class="w-full py-2.5 px-4 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 hover:border-emerald-500/50 text-emerald-400 font-semibold rounded-xl text-sm transition-all duration-300 flex items-center justify-center gap-2 group">
+        <i class="far fa-copy group-hover:scale-110 transition-transform"></i>
+        <span>Salin Nomor Rekening</span>
     </button>
 </div>
 
