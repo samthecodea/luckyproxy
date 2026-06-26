@@ -1,5 +1,5 @@
 // === CONFIGURATION ===
-        const WHATSAPP_NUMBER = "6285715401386"; // GANTI DENGAN NOMOR WA ANDA (Pakai awalan 62)
+        const WHATSAPP_NUMBER = "6285733390830"; // GANTI DENGAN NOMOR WA ANDA (Pakai awalan 62)
         
         // Variables
         let timerInterval;
