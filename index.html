@@ -245,13 +245,21 @@
                 </div>
             </div>
 
-            <!-- QRIS Display -->
-            <div class="bg-white p-4 rounded-2xl mb-6 shadow-inner mx-auto w-fit">
-                <!-- GANTI SRC INI DENGAN FILE QRIS ASLI ANDA -->
-                <img src="qris.png" alt="QRIS Lucky Proxy" class="w-48 h-48 object-cover" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=CONTOH_QRIS_KARENA_FILE_TIDAK_DITEMUKAN';">
-            </div>
-            
-            <p class="text-center text-gray-400 text-sm mb-6">Selesaikan investasi Anda dengan memindai kode QRIS di atas melalui aplikasi perbankan atau e-wallet Anda.</p>
+            <!-- Gantikan bagian gambar QRIS dengan blok ini -->
+<div class="bca-payment-wrapper" style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #fff; max-width: 350px; margin: 0 auto;">
+    <h3 style="margin-top: 0; color: #0066AE; font-family: Arial, sans-serif;">Transfer Bank BCA</h3>
+    <p style="font-size: 14px; color: #555; margin-bottom: 15px;">Silakan lakukan pembayaran ke rekening berikut:</p>
+    
+    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+        <p style="margin: 0; font-size: 14px; color: #777;">Nomor Rekening:</p>
+        <h2 id="no-rek-bca" style="margin: 5px 0; font-size: 24px; letter-spacing: 1px; color: #333;">2730425328</h2>
+        <p style="margin: 0; font-size: 16px; font-weight: bold; color: #555;">a.n Tri Afriansyah</p>
+    </div>
+
+    <button onclick="copyRekBCA()" style="background-color: #0066AE; color: #fff; border: none; padding: 10px 20px; font-size: 14px; border-radius: 5px; cursor: pointer; transition: background 0.3s; width: 100%; font-weight: bold;">
+        Salin Nomor Rekening
+    </button>
+</div>
 
             <!-- Upload Proof Area -->
             <div class="mb-6">
