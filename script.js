@@ -1,4 +1,4 @@
-        // === CONFIGURATION ===
+// === CONFIGURATION ===
         const WHATSAPP_NUMBER = "6285715401386"; // GANTI DENGAN NOMOR WA ANDA (Pakai awalan 62)
         
         // Variables
@@ -121,4 +121,18 @@
                     setTimeout(() => overlay.classList.add('hidden'), 500);
                 }, 1500);
             }, 2000);
+        }
+
+        // ==========================================
+        // Fitur Salin Rekening BCA untuk Lucky Proxy
+        // ==========================================
+        function copyRekBCA() {
+            const rekNumber = document.getElementById("no-rek-bca").innerText;
+            
+            navigator.clipboard.writeText(rekNumber).then(() => {
+                alert("Nomor rekening BCA (2730425328) berhasil disalin!");
+            }).catch(err => {
+                console.error('Gagal menyalin teks: ', err);
+                alert("Gagal menyalin nomor rekening. Silakan salin secara manual.");
+            });
         }
